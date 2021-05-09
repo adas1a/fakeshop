@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/*Navbar*/
+.NavStay{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+body{
+  background-image: linear-gradient(131deg, #09203f 0%, #537895 100%);
+  width: 100%;
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+}
+.login{
+  background-color: #fcfffa;
+  color: #181830!important;
+  font-weight: bold;
+  border-radius: 33px;
+}
+.login:hover{
+  animation-name: loginAnimation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes  loginAnimation{
+from{background-color: #fcfffa;
+    color: #424fff !important;
+  }
+  to{background-color: #498fc8;
+  }
+}
+/*Home.js*/
+
+.HomeBody{
+  margin-top: 55px;
+}
+.home-banner{
+  color:white;
+  font-family: Comfortaa;
+  position: relative;
+  padding: 2% 10%;
+}
+@media only screen and (max-width: 560px){
+  .home-banner{
+    font-size: 60%;
+  }
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.wrapper1{
+  margin-top: 60px;
+}
+.wrapper1 > *{
+  margin: 20px auto 0;
+}
+.pd-bg{
+  width: 100%;
+  margin:0 !important;
+  padding:0 !important;
+  background-color: black !important;
+  font-size: 55px;
+}
+.breadcrumb{
+  background-color:#343a40;
+  border-radius: 0;
+}
