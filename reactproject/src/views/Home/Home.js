@@ -1,5 +1,5 @@
-import '../App.css';
-import d1 from '../img/d1.jpg';
+import '../../App.css';
+import d1 from '../../img/d1.jpg';
 import {Button} from 'react-bootstrap';
 
 const styles = {

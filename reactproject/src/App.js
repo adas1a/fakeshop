@@ -1,24 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbarek from "./Navbarek/Nav.js";
-import Home from "./Home/Home.js";
-import Products from "./Products";
-import ProductDetail from "./ProductDetail";
+import AppNavbar from "./components/AppNavbar/AppNavbar.js";
+import Home from "./views/Home/Home.js";
+import Products from "./views/Products/Products";
+import ProductDetail from "./views/ProductDetail/ProductDetail";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Shop from "./Shop";
+import Shop from "./views/Shop/Shop";
 import './App.css';
 
 function App() {
   return (
       <Router>
         <div className="App">
-            <Navbarek />
-            {/*<Home />*/}
-            {/*<Cards img="/d1.jpg" />*/}
+            <AppNavbar />
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/products" exact component={Products} />
-                <Route path="/products/:id"  component={ProductDetail} />
+                <Route path="/products/:id" component={ProductDetail} />
                 <Route path="/shop"  component={Shop} />
             </Switch>
 

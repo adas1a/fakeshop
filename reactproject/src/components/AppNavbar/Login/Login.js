@@ -1,11 +1,7 @@
-import '../App.css';
+import '../../../App.css';
 import {Modal, Button, Form, Nav} from 'react-bootstrap';
 import {useState} from 'react';
 import React from 'react';
-
-export const abc = () => {
-    return "abc";
-}
 
  const Login = () => {
     const [show, setShow] = useState(false);
@@ -53,8 +49,7 @@ export const abc = () => {
                     </Button>
                 </Modal.Footer>
             </Modal>
-        </React.Fragment>);
-
-
+        </React.Fragment>
+    );
 }
 export default Login;

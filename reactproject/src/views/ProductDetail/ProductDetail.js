@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
-import API from "./const/api";
-import {Breadcrumb, Button, Carousel, Col, Container, Dropdown, Row} from "react-bootstrap";
-import './App.css';
-import Bread from "./Bread";
+import API from "../../const/api";
+import {Breadcrumb, Button, Carousel, Col, Container, Dropdown, Image, Row} from "react-bootstrap";
+import '../../App.css';
+import Bread from "../../components/Bread/Bread";
 
 
 
@@ -28,12 +28,12 @@ function ProductDetail({ match }) {
             <Bread className='pd-bg'/>
 
             <div className='container-fluid'>
-                <div className='row'>
-                    <div className='col-xs-12 col-lg-5 offset-md-1'>
+                <Row>
+                    <Col xs={12} lg={5} md={{offset: 1}}>
                         <h2>{item.title}</h2>
-                        <img src={item.image} alt={""} className='img-fluid' />
-                    </div>
-                    <div className='col-xs-12 col-lg-5 offset-md-1'>
+                        <Image src={item.image} alt={""} fluid />
+                    </Col>
+                    <Col xs={12} lg={5} md={{offset: 1}}>
                         <h3>Price {item.price}$</h3>
                         <h4>Free shipping</h4>
                         <Dropdown>
@@ -49,8 +49,8 @@ function ProductDetail({ match }) {
                         </Dropdown>
                         <Button href="#">Add to cart</Button>
                         <Button href="#">Buy Now</Button>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                 <Row>
                     <div className='container-fluid w-25'>
                         <Carousel className='mt-5 carousel mb-5'>

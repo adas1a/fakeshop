@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import {Button, Card, CardColumns, CardDeck, Col, Container, Row} from "react-bootstrap";
-import API from "./const/api";
+import API from "../../const/api";
 
 const Products = () => {
     useEffect(() => {

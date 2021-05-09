@@ -1,17 +1,11 @@
 import React from 'react';
-import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav} from 'react-bootstrap';
-import Login, {abc} from "./Login";
-import {Link} from "react-router-dom";
+import Login from "./Login/Login";
+import NavLink from "./NavLink/NavLink";
 
 
-
-function Navbarek() {
-
-    const navStyle = {
-        color: 'white'
-    };
+function AppNavbar() {
 
     return (
         <div className="Nav NavStay">
@@ -20,16 +14,8 @@ function Navbarek() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link>
-                            <Link to="/" style ={navStyle}>
-                                <li>Home</li>
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/products" style={navStyle}>
-                                <li>Product</li>
-                            </Link>
-                        </Nav.Link>
+                        <NavLink to="/" label="Home"/>
+                        <NavLink to="/products" label="Products"/>
                         <Login/>
                     </Nav>
                 </Navbar.Collapse>
@@ -39,4 +25,4 @@ function Navbarek() {
     );
 }
 
-export default Navbarek;
+export default AppNavbar;
