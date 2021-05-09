@@ -79,3 +79,6 @@ from{background-color: #fcfffa;
   background-color:#343a40;
   border-radius: 0;
 }
+.carousel {
+  max-width: 50%;
+}

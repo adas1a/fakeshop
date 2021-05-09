@@ -30,8 +30,8 @@ function ProductDetail({ match }) {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-xs-12 col-lg-5 offset-md-1'>
+                        <h2>{item.title}</h2>
                         <img src={item.image} alt={""} className='img-fluid' />
-                        <figcaption>{item.title}</figcaption>
                     </div>
                     <div className='col-xs-12 col-lg-5 offset-md-1'>
                         <h3>Price {item.price}$</h3>
@@ -52,11 +52,11 @@ function ProductDetail({ match }) {
                     </div>
                 </div>
                 <Row>
-                    <div className='container'>
-                        <Carousel className='mt-5'>
+                    <div className='container-fluid w-25'>
+                        <Carousel className='mt-5 carousel mb-5'>
                             <Carousel.Item>
                                 <img
-                                    className="d-block w-100"
+                                    className="d-inline-block w-100"
                                     src={item.image}
                                     alt="First slide"
                                 />
@@ -64,9 +64,10 @@ function ProductDetail({ match }) {
                                     <h3>First slide label</h3>
                                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </Carousel.Caption>
-                            </Carousel.Item><Carousel.Item>
+                            </Carousel.Item>
+                            <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-inline-block w-100"
                                 src={item.image}
                                 alt="First slide"
                             />
@@ -74,9 +75,10 @@ function ProductDetail({ match }) {
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
-                        </Carousel.Item><Carousel.Item>
+                            </Carousel.Item>
+                            <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-inline-block w-100"
                                 src={item.image}
                                 alt="First slide"
                             />
@@ -84,10 +86,9 @@ function ProductDetail({ match }) {
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
-                        </Carousel.Item>
+                            </Carousel.Item>
                         </Carousel>
                     </div>
-
                 </Row>
 
 

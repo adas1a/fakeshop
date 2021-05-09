@@ -6,7 +6,7 @@ const Bread = () => {
     return (
         <div >
             <Breadcrumb >
-                <Breadcrumb.Item href="#">Home</Breadcrumb.Item >
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item >
                 <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
                     Shop
                 </Breadcrumb.Item>
