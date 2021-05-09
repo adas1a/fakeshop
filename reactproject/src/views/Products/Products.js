@@ -2,8 +2,12 @@ import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import {Button, Card, CardColumns, CardDeck, Col, Container, Row} from "react-bootstrap";
 import API from "../../const/api";
+import useModal from "../../hooks/useModal";
 
 const Products = () => {
+
+    // const [data, fetchData] = useFetchData(`${API}/products`);
+
     useEffect(() => {
         fetchItems()
             .then(json=>console.log())
@@ -12,8 +16,7 @@ const Products = () => {
     const [items, setItems] = useState([]);
 
     const fetchItems = async () => {
-        const data = await fetch(`${API}/products`
-        );
+        const data = await fetch(`${API}/products`);
         const items = await data.json();
         console.log(items);
         setItems(items);

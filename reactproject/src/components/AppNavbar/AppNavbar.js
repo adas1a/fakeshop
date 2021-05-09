@@ -14,8 +14,8 @@ function AppNavbar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <NavLink to="/" label="Home"/>
-                        <NavLink to="/products" label="Products"/>
+                        <NavLink to="/"><span>Home</span></NavLink>
+                        <NavLink to="/products" children="Products"/>
                         <Login/>
                     </Nav>
                 </Navbar.Collapse>

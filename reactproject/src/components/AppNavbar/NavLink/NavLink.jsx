@@ -8,7 +8,7 @@ const NavLink = props => {
     return (
         <LinkContainer to={props.to} exact>
             <Nav.Link variant='secondary'>
-                {props.label}
+                {props.children}
             </Nav.Link>
         </LinkContainer>
     );
@@ -16,7 +16,7 @@ const NavLink = props => {
 
 NavLink.propTypes = {
     to: PropTypes.string,
-    label: PropTypes.string
+    children: PropTypes.node
 };
 
 export default NavLink;

@@ -2,19 +2,17 @@ import '../../../App.css';
 import {Modal, Button, Form, Nav} from 'react-bootstrap';
 import {useState} from 'react';
 import React from 'react';
+import useModal from "../../../hooks/useModal";
 
  const Login = () => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+     const [show, open, close] = useModal();
 
     return (
         <React.Fragment>
 
-            <Nav.Link onClick={handleShow} className="login">Log in</Nav.Link>
+            <Nav.Link onClick={open} className="login">Log in</Nav.Link>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={close}>
                 <Modal.Header closeButton>
                     <Modal.Title>Log in to your account</Modal.Title>
                 </Modal.Header>
