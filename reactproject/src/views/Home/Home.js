@@ -1,5 +1,4 @@
 import '../../App.css';
-import d1 from '../../img/d1.jpg';
 import {Button} from 'react-bootstrap';
 
 const styles = {
@@ -20,7 +19,7 @@ const styles = {
 
 const Home = () => {
     return(
-        <div className="HomeBody">
+        <div className="home-body">
             <div style={styles.header} className="text-wrap">
                 {/*<img src={d1} alt="" className="imgBg img-fluid"/>*/}
                     <div style={styles.content}>

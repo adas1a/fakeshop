@@ -8,7 +8,7 @@ import NavLink from "./NavLink/NavLink";
 function AppNavbar() {
 
     return (
-        <div className="Nav NavStay">
+        <div className="nav-stay">
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="text-center">
                 <Navbar.Brand href="#home"> Learn Web </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

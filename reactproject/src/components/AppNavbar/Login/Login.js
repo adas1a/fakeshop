@@ -1,6 +1,5 @@
 import '../../../App.css';
 import {Modal, Button, Form, Nav} from 'react-bootstrap';
-import {useState} from 'react';
 import React from 'react';
 import useModal from "../../../hooks/useModal";
 
@@ -39,10 +38,10 @@ import useModal from "../../../hooks/useModal";
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" onClick={close}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button variant="primary" onClick={close}>
                         Save Changes
                     </Button>
                 </Modal.Footer>

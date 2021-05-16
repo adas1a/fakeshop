@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import API from "../../const/api";
-import {Breadcrumb, Button, Carousel, Col, Container, Dropdown, Image, Row} from "react-bootstrap";
+import {Button, Carousel, Col, Dropdown, Image, Row} from "react-bootstrap";
 import '../../App.css';
 import Bread from "../../components/Bread/Bread";
 
@@ -25,7 +25,7 @@ function ProductDetail({ match }) {
 
     return (
         <div>
-            <Bread className='pd-bg'/>
+            <Bread className='product-detail-bg'/>
 
             <div className='container-fluid'>
                 <Row>
